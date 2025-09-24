@@ -1,0 +1,122 @@
+.flex-row {
+  /* padding: 30px; */
+  /* background-color: yellow; */
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+.person_name {
+  padding-top: 1em;
+  text-align: center;
+}
+.ls_team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 230px;
+  min-height: 50px;
+}
+.per_img {
+  filter: grayscale();
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.social {
+  position: absolute;
+  left: 0;
+  margin-bottom: 7%;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social_icon {
+  margin: 0px 5px;
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ls_team:hover {
+  filter: none;
+}
+.per_det {
+  margin-top: 10px;
+  text-align: center;
+  max-width: 220px;
+}
+.desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-transform: capitalize;
+}
+
+.nameOf {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px gray;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.position {
+  text-transform: capitalize;
+}
+
+/*------------------------------------*\
+	Aboutt
+\*------------------------------------*/
+
+.aboutt {
+  position: relative;
+  text-align: center;
+  padding: 20px 20px;
+  border: 1px solid #eee;
+  margin: 15px 0px;
+  min-height: 450px;
+  min-width: 260px;
+}
+
+.aboutt i {
+  font-size: 36px;
+  color: #6195ff;
+  margin-bottom: 20px;
+}
+
+.aboutt:after {
+  content: "";
+  background-color: #1c1d21;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: 0.2s width;
+  transition: 0.2s width;
+}
+
+.aboutt:hover:after {
+  width: 100%;
+}
+
+.aboutt h3 {
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+.aboutt:hover img {
+  filter: none;
+}
+.aboutt:hover h3 {
+  color: #fff;
+}
