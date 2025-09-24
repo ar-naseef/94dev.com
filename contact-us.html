@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-104303210-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-104303210-3");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Contact 94DEV - Building Smart Solutions. Get in touch with our creative team for web/mobile app development, cloud architecting, and automation services."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <title>Contact Us | 94DEV - Building Smart Solutions</title>
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+    <!-- Magnific Popup -->
+    <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- team Link -->
+    <link rel="stylesheet" href="css/team.css" />
+    <!-- product Link -->
+    <link rel="stylesheet" href="css/product.css" />
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- media Query -->
+    <link rel="stylesheet" href="css/media_queries.css" />
+
+    <link rel="icon" href="img/Favicon.ico" type="image/x-icon" />
+
+    <!-- Custom Contact Form Styles -->
+    <style>
+      .modern-form-container {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        padding: 60px 40px;
+        margin: 40px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* .modern-form-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+      } */
+
+      .form-group {
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .input-wrapper {
+        position: relative;
+      }
+
+      .modern-input {
+        width: 100%;
+        padding: 18px 20px 18px 55px;
+        border: 2px solid #e8ecef;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background: #f8f9fa;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .modern-input:focus {
+        border-color: #667eea;
+        background: #fff;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        outline: none;
+      }
+
+      .modern-textarea {
+        min-height: 120px;
+        resize: vertical;
+        padding-top: 18px;
+      }
+
+      .input-icon {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #667eea;
+        font-size: 16px;
+        z-index: 2;
+      }
+
+      .textarea-icon {
+        top: 25px;
+        transform: none;
+      }
+
+      .modern-btn {
+        background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        padding: 18px 40px;
+        border-radius: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .modern-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 25px rgba(102, 126, 234, 0.4);
+        color: white;
+      }
+
+      .modern-btn:active {
+        transform: translateY(0);
+      }
+
+      .modern-btn i {
+        margin-right: 10px;
+      }
+
+      .modern-alert {
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+
+      .modern-alert i {
+        margin-right: 10px;
+      }
+
+      .alert-success {
+        background: linear-gradient(45deg, #56ab2f 0%, #a8e6cf 100%);
+        color: white;
+      }
+
+      .alert-danger {
+        background: linear-gradient(45deg, #ff416c 0%, #ff4b2b 100%);
+        color: white;
+      }
+
+      .contact-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 15px;
+      }
+
+      .contact-subtitle {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        margin-bottom: 40px;
+      }
+
+      .form-section {
+        min-height: calc(100vh - 200px);
+        display: flex;
+        align-items: center;
+      }
+
+      .company-info-header {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        padding: 50px 40px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .company-name {
+        font-size: 2.8rem !important;
+        font-weight: 700;
+        margin-bottom: 40px !important;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .contact-info-grid {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .contact-info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 200px;
+        flex: 1;
+      }
+
+      .contact-icon {
+        color: #667eea;
+        font-size: 24px;
+        margin-bottom: 15px;
+        background: rgba(102, 126, 234, 0.2);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(102, 126, 234, 0.3);
+      }
+
+      .contact-details {
+        text-align: center;
+      }
+
+      .contact-label {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .contact-value {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .contact-link {
+        color: #fff !important;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid transparent;
+      }
+
+      .contact-link:hover {
+        color: #667eea !important;
+        border-bottom-color: #667eea;
+        transform: translateY(-1px);
+      }
+
+      .phone-separator {
+        margin: 0 10px;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: bold;
+        display: inline;
+      }
+
+      .phone-numbers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .phone-number {
+        white-space: nowrap;
+      }
+
+      @media (min-width: 769px) {
+        .phone-numbers::after {
+          /* content: "•"; */
+          color: rgba(255, 255, 255, 0.6);
+          font-weight: bold;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-top: 2px;
+        }
+
+        .phone-numbers {
+          position: relative;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .modern-form-container {
+          padding: 40px 25px;
+          margin: 20px 0;
+        }
+
+        .contact-title {
+          font-size: 2rem;
+        }
+
+        .modern-input {
+          padding: 15px 18px 15px 50px;
+          font-size: 15px;
+        }
+
+        .modern-btn {
+          padding: 15px 30px;
+          font-size: 15px;
+        }
+
+        .company-info-header {
+          padding: 35px 25px;
+          margin: 0 15px;
+        }
+
+        .company-name {
+          font-size: 2.2rem !important;
+          margin-bottom: 30px !important;
+        }
+
+        .contact-info-grid {
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+        }
+
+        .contact-info-item {
+          min-width: auto;
+          margin-bottom: 0;
+          width: 100%;
+          max-width: 280px;
+        }
+
+        .contact-icon {
+          width: 45px;
+          height: 45px;
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+
+        .contact-label {
+          font-size: 15px;
+          margin-bottom: 8px;
+        }
+
+        .contact-value {
+          font-size: 15px;
+          text-align: center;
+        }
+
+        .contact-details {
+          text-align: center;
+          width: 100%;
+        }
+
+        .phone-numbers {
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .phone-number {
+          padding: 8px 20px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+          text-align: center;
+          display: block;
+          width: auto;
+          min-width: 160px;
+        }
+
+        .phone-number:hover {
+          background: rgba(102, 126, 234, 0.15);
+          transform: translateY(-1px);
+        }
+
+        .contact-link {
+          text-align: center;
+          display: block;
+          padding: 8px 20px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+          background: rgba(102, 126, 234, 0.15);
+          transform: translateY(-1px);
+        }
+      }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <!-- Background Image -->
+      <div
+        class="bg-img"
+        style="background-image: url('./img/background1.jpg')"
+      >
+        <div class="overlay"></div>
+      </div>
+      <!-- /Background Image -->
+
+      <!-- Nav -->
+      <nav id="nav" class="navbar nav-transparent">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- Logo -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <img class="logo" src="img/94DEV-dark.png" alt="logo" />
+                <img class="logo-alt" src="img/94DEV.png" alt="logo" />
+              </a>
+            </div>
+            <!-- /Logo -->
+
+            <!-- Collapse nav button -->
+            <div class="nav-collapse">
+              <span></span>
+            </div>
+            <!-- /Collapse nav button -->
+          </div>
+
+          <!--  Main navigation  -->
+          <ul class="main-nav nav navbar-nav navbar-right">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#service">Services</a></li>
+            <li><a href="index.html#tech">Tech</a></li>
+            <li><a href="index.html#whyus">Why us!</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- /Main navigation -->
+        </div>
+      </nav>
+      <!-- /Nav -->
+
+      <!-- home wrapper -->
+      <div class="home-wrapper">
+        <div class="container">
+          <div class="row">
+            <!-- Page title -->
+            <div class="col-md-12 text-center">
+              <h1 class="white-text">Contact Us</h1>
+              <p class="white-text lead">Let's discuss your next project</p>
+            </div>
+            <!-- /Page title -->
+          </div>
+
+          <!-- Company Info -->
+          <div class="row" style="margin-top: 40px">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="company-info-header">
+                <h2 class="white-text company-name">94DEV LLC</h2>
+                <div class="contact-info-grid">
+                  <div class="contact-info-item">
+                    <i class="fa fa-map-marker contact-icon"></i>
+                    <div class="contact-details">
+                      <span class="contact-label">Address:</span>
+                      <div class="contact-value">
+                        30 N Gould St, Ste R<br />
+                        Sheridan, Wyoming 59901, USA
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <i class="fa fa-envelope contact-icon"></i>
+                    <div class="contact-details">
+                      <span class="contact-label">Email:</span>
+                      <div class="contact-value">
+                        <a href="mailto:naseef@94dev.com" class="contact-link"
+                          >naseef@94dev.com</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <i class="fa fa-phone contact-icon"></i>
+                    <div class="contact-details">
+                      <span class="contact-label">Phone:</span>
+                      <div class="contact-value">
+                        <div class="phone-numbers">
+                          <a
+                            href="tel:+94767324216"
+                            class="contact-link phone-number"
+                            >+94 76 732 4216</a
+                          >
+                          <a
+                            href="tel:+94770503302"
+                            class="contact-link phone-number"
+                            >+94 77 050 3302</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Company Info -->
+        </div>
+      </div>
+      <!-- /home wrapper -->
+    </header>
+    <!-- /Header -->
+
+    <!-- Contact Form Section -->
+    <div class="section form-section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="modern-form-container">
+              <div class="text-center">
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-subtitle">
+                  Ready to bring your ideas to life? Send us a message and let's
+                  start building something amazing together.
+                </p>
+              </div>
+
+              <form
+                class="contact-form"
+                action="https://formspree.io/mnqdrkea"
+                name="myForm"
+                id="myForm"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  id="name"
+                  class="input"
+                  placeholder="Name"
+                  name="name"
+                />
+                <input
+                  type="text"
+                  id="phone"
+                  class="input"
+                  placeholder="Phone (+11231231234)"
+                  name="phpneNo"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  class="input"
+                  placeholder="Email"
+                  name="_replyto"
+                />
+                <input
+                  type="text"
+                  id="subject"
+                  class="input"
+                  placeholder="Subject"
+                  name="subject"
+                />
+                <textarea
+                  class="input"
+                  id="message"
+                  placeholder="Message"
+                  name="message"
+                ></textarea>
+                <!-- <div id="contactUs" class="main-btn">Send message</div> -->
+                <input
+                  type="button"
+                  class="main-btn"
+                  value="Get in Touch"
+                  id="sendme"
+                />
+                <br />
+                <br />
+                <div id="succ-msg" style="display: none" class="text-center">
+                  Your message sent succesfully!
+                </div>
+                <div id="err-msg" style="display: none" class="text-center">
+                  Error in sending your message. Reach us at naseef@94dev.com
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Contact Form Section -->
+
+    <!-- Footer -->
+    <footer id="footer" class="sm-padding bg-dark">
+      <!-- Container -->
+      <div class="container">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12">
+            <!-- footer logo -->
+            <div class="footer-logo">
+              <a href="index.html"
+                ><img src="img/94DEV-slog.png" alt="logo"
+              /></a>
+            </div>
+            <!-- /footer logo -->
+
+            <!-- footer follow -->
+            <ul class="footer-follow">
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/company/94dev"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/94Dev1"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/94dev"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/94dev"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCZQ4lUhCXDHEynQypODWe3g"
+                  ><i class="fa fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/94_dev/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.tiktok.com/@94dev_">
+                  <span
+                    ><img
+                      src="img/icons/tik-tok.png"
+                      width="15em"
+                      height="15em"
+                      alt=""
+                  /></span>
+                </a>
+              </li>
+            </ul>
+            <!-- /footer follow -->
+
+            <!-- footer links -->
+            <div class="footer-links">
+              <ul>
+                <li>
+                  <a href="terms-and-conditions.html">Terms & Conditions</a>
+                </li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>
+              </ul>
+            </div>
+            <!-- /footer links -->
+
+            <!-- footer company info -->
+            <div class="footer-company-info">
+              <div class="company-details">
+                <h4>94DEV LLC</h4>
+                <p>30 N Gould St, Ste R<br />Sheridan, Wyoming 59901</p>
+                <p>
+                  Support:
+                  <a href="mailto:naseef@94dev.com">naseef@94dev.com</a>
+                </p>
+                <p>Phone: <a href="tel:+94767324216">+94 76 732 4216</a></p>
+              </div>
+            </div>
+            <!-- /footer company info -->
+
+            <!-- footer copyright -->
+            <div class="footer-copyright">
+              <p id="copyright"></p>
+            </div>
+            <!-- /footer copyright -->
+          </div>
+        </div>
+        <!-- /Row -->
+      </div>
+      <!-- /Container -->
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+  </body>
+  <script>
+    let date = new Date();
+    let getYear = date.getFullYear();
+    document.querySelector(
+      "#copyright"
+    ).textContent = `Copyright © ${getYear} 94DEV LLC. All Rights Reserved`;
+  </script>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v9.0",
+      });
+    };
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+  <!-- Your Chat Plugin code -->
+  <div
+    class="fb-customerchat"
+    attribution="setup_tool"
+    page_id="106487610687509"
+    theme_color="#6195ff"
+  ></div>
+</html>
