@@ -9,7 +9,7 @@ const Service = [
     icon: "fa fa-cloud",
     title: "Cloud Architecting",
     details: `94DEV are specialists in cloud computing with expertise
-        knowledge in AWS, GCP, Heroku etc..`,
+        knowledge in AWS, GCP, Firebase etc..`,
   },
   {
     icon: "fa fa-cogs",

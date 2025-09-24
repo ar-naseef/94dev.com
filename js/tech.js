@@ -7,24 +7,29 @@ const techItem = [
     tech_name: "Node.js",
     img_url: "https://cdn.svgporn.com/logos/nodejs-icon.svg",
   },
-
+  {
+    tech_name: "AWS",
+    img_url: "https://images.fmctraining.com/images/aws-logo-white.png",
+  },
+  {
+    tech_name: "Firebase",
+    img_url: "https://cdn.svglogos.dev/logos/firebase-icon.svg",
+  },
   {
     tech_name: "React.js",
     img_url: "https://cdn.svgporn.com/logos/react.svg",
   },
-
   {
-    tech_name: "Serverless",
-    img_url: "https://cdn.svgporn.com/logos/serverless.svg",
+    tech_name: "Next.js",
+    img_url: "https://cdn.svglogos.dev/logos/nextjs-icon.svg",
+  },
+  {
+    tech_name: "GCP",
+    img_url: "https://api.iconify.design/logos-google-cloud-platform.svg",
   },
   {
     tech_name: "Puppeteer",
     img_url: "https://cdn.svgporn.com/logos/puppeteer.svg",
-  },
-  {
-    tech_name: "PWA",
-    img_url:
-      "https://cdn-images-1.medium.com/max/1600/1*GwBZgjItyjEwaaZn-lxTTA.png",
   },
   {
     tech_name: "MongoDB",
@@ -36,20 +41,16 @@ const techItem = [
     img_url: "https://cdn.svgporn.com/logos/mysql.svg",
   },
   {
+    tech_name: "Supabase",
+    img_url: "https://cdn.svglogos.dev/logos/supabase-icon.svg",
+  },
+  {
+    tech_name: "Supabase",
+    img_url: "https://cdn.svgporn.com/logos/python.svg",
+  },
+  {
     tech_name: "GraphQL",
     img_url: "https://cdn.svgporn.com/logos/graphql.svg",
-  },
-  {
-    tech_name: "AWS",
-    img_url: "https://images.fmctraining.com/images/aws-logo-white.png",
-  },
-  {
-    tech_name: "Firebase",
-    img_url: "https://cdn.svgporn.com/logos/firebase.svg",
-  },
-  {
-    tech_name: "GCP",
-    img_url: "https://api.iconify.design/logos-google-cloud-platform.svg",
   },
   {
     tech_name: "Docker",
@@ -61,8 +62,18 @@ const techItem = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1024px-Electron_Software_Framework_Logo.svg.png",
   },
   {
-    tech_name: "React Native",
-    img_url: "https://cdn.svgporn.com/logos/react.svg",
+    tech_name: "OpenAI Integration",
+    img_url: "https://cdn.svglogos.dev/logos/openai-icon.svg",
+  },
+  {
+    tech_name: "Zapier",
+    img_url:
+      "https://1000logos.net/wp-content/uploads/2022/09/Zapier-Symbol.png",
+  },
+  {
+    tech_name: "n8n",
+    img_url:
+      "https://meta-q.cdn.bubble.io/f1740327389123x713161792968389100/n8n%20plugin.png",
   },
 ];
 
